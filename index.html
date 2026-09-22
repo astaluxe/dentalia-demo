@@ -1,1 +1,491 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dentalia | Clínica dental · Proyecto demo</title>
+
+  <meta
+    name="description"
+    content="Proyecto demostrativo de una web moderna para una clínica dental."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+
+    <a href="#inicio" class="logo">
+      DENTALIA<span>+</span>
+    </a>
+
+    <nav>
+      <a href="#tratamientos">Tratamientos</a>
+      <a href="#confianza">La clínica</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#cita" class="nav-button">Pedir cita</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section id="inicio" class="hero">
+
+    <div class="container hero-grid">
+
+      <div class="hero-text">
+
+        <p class="eyebrow">
+          ODONTOLOGÍA · PREVENCIÓN · ESTÉTICA
+        </p>
+
+        <h1>
+          Tu sonrisa,
+          <span>sin complicaciones.</span>
+        </h1>
+
+        <p class="hero-description">
+          Una experiencia dental clara, cercana y moderna.
+          Te explicamos cada paso antes de empezar.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#cita" class="btn-primary">
+            Pedir primera visita
+          </a>
+
+          <a href="#tratamientos" class="btn-secondary">
+            Ver tratamientos
+          </a>
+
+        </div>
+
+        <div class="trust-row">
+          <span>✓ Primera valoración</span>
+          <span>✓ Plan explicado paso a paso</span>
+          <span>✓ Atención personalizada</span>
+        </div>
+
+      </div>
+
+
+      <div class="hero-card">
+
+        <p class="small-label">
+          PRIMERA VISITA
+        </p>
+
+        <h2>
+          Cuéntanos qué necesitas
+        </h2>
+
+        <p>
+          Selecciona el motivo de consulta y prepara
+          una solicitud de cita en menos de un minuto.
+        </p>
+
+        <a href="#cita" class="card-button">
+          Empezar →
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- TRATAMIENTOS -->
+
+  <section id="tratamientos" class="section treatments">
+
+    <div class="container">
+
+      <p class="section-label">TRATAMIENTOS</p>
+
+      <div class="section-heading">
+
+        <h2>
+          Cuidamos tu sonrisa en cada etapa
+        </h2>
+
+        <p>
+          Una selección de servicios habituales presentada
+          como proyecto demostrativo.
+        </p>
+
+      </div>
+
+
+      <div class="treatment-grid">
+
+        <article class="treatment-card">
+          <span>01</span>
+          <h3>Revisión y prevención</h3>
+          <p>
+            Revisiones periódicas, higiene y seguimiento
+            de la salud bucodental.
+          </p>
+          <button class="choose-treatment" data-treatment="Revisión">
+            Me interesa →
+          </button>
+        </article>
+
+
+        <article class="treatment-card">
+          <span>02</span>
+          <h3>Ortodoncia</h3>
+          <p>
+            Opciones para mejorar alineación dental
+            y mordida.
+          </p>
+          <button class="choose-treatment" data-treatment="Ortodoncia">
+            Me interesa →
+          </button>
+        </article>
+
+
+        <article class="treatment-card">
+          <span>03</span>
+          <h3>Estética dental</h3>
+          <p>
+            Tratamientos orientados a mejorar
+            la apariencia de la sonrisa.
+          </p>
+          <button class="choose-treatment" data-treatment="Estética dental">
+            Me interesa →
+          </button>
+        </article>
+
+
+        <article class="treatment-card">
+          <span>04</span>
+          <h3>Implantes</h3>
+          <p>
+            Soluciones para sustituir piezas dentales
+            mediante planificación profesional.
+          </p>
+          <button class="choose-treatment" data-treatment="Implantes">
+            Me interesa →
+          </button>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONFIANZA -->
+
+  <section id="confianza" class="section confidence">
+
+    <div class="container confidence-grid">
+
+      <div>
+
+        <p class="section-label">
+          UNA EXPERIENCIA MÁS CLARA
+        </p>
+
+        <h2>
+          Saber qué va a pasar también da tranquilidad.
+        </h2>
+
+        <p class="confidence-text">
+          El objetivo del diseño es reducir dudas antes de
+          una primera visita y facilitar el contacto.
+        </p>
+
+      </div>
+
+
+      <div class="confidence-points">
+
+        <div>
+          <strong>01</strong>
+          <h3>Escuchamos</h3>
+          <p>
+            Primero entendemos qué te preocupa y qué buscas.
+          </p>
+        </div>
+
+        <div>
+          <strong>02</strong>
+          <h3>Explicamos</h3>
+          <p>
+            Presentamos las opciones de manera comprensible.
+          </p>
+        </div>
+
+        <div>
+          <strong>03</strong>
+          <h3>Decides</h3>
+          <p>
+            La decisión se toma con la información necesaria.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CITA -->
+
+  <section id="cita" class="section appointment">
+
+    <div class="container appointment-grid">
+
+      <div>
+
+        <p class="section-label">
+          SOLICITUD DE CITA
+        </p>
+
+        <h2>
+          ¿En qué podemos ayudarte?
+        </h2>
+
+        <p>
+          Este formulario es una simulación y no envía ni almacena
+          información personal.
+        </p>
+
+      </div>
+
+
+      <form id="appointmentForm">
+
+        <label>
+          Motivo de la consulta
+
+          <select id="treatmentSelect" required>
+            <option value="">Selecciona una opción</option>
+            <option>Revisión</option>
+            <option>Ortodoncia</option>
+            <option>Estética dental</option>
+            <option>Implantes</option>
+            <option>Otro</option>
+          </select>
+        </label>
+
+
+        <label>
+          Momento preferido
+
+          <select required>
+            <option value="">Selecciona una opción</option>
+            <option>Mañana</option>
+            <option>Mediodía</option>
+            <option>Tarde</option>
+          </select>
+        </label>
+
+
+        <label>
+          Comentario opcional
+
+          <textarea
+            rows="4"
+            placeholder="Ejemplo: Me gustaría informarme sobre ortodoncia..."
+          ></textarea>
+        </label>
+
+
+        <button type="submit">
+          Preparar solicitud
+        </button>
+
+        <small>
+          Proyecto demo. Ningún dato introducido se envía a una clínica.
+        </small>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+
+  <section id="faq" class="section faq">
+
+    <div class="container">
+
+      <p class="section-label">
+        PREGUNTAS FRECUENTES
+      </p>
+
+      <h2 class="faq-title">
+        Antes de tu primera visita
+      </h2>
+
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            ¿Cuánto dura una primera visita?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              En este proyecto demo no indicamos un tiempo clínico real.
+              Una clínica real debería especificar aquí sus condiciones.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            ¿Puedo preguntar antes de empezar un tratamiento?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              Sí. Una web clínica bien diseñada debería facilitar
+              información clara antes de cualquier decisión.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+            ¿Este formulario reserva una cita real?
+            <span>+</span>
+          </button>
+
+          <div class="faq-answer">
+            <p>
+              No. Toda esta web es un proyecto demostrativo
+              de diseño y desarrollo web.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA FINAL -->
+
+  <section class="final-cta">
+
+    <div class="container final-box">
+
+      <p class="section-label">
+        DENTALIA+
+      </p>
+
+      <h2>
+        Una web sanitaria también puede sentirse sencilla.
+      </h2>
+
+      <a href="#cita" class="btn-primary">
+        Probar solicitud de cita
+      </a>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-content">
+
+    <a href="#inicio" class="logo">
+      DENTALIA<span>+</span>
+    </a>
+
+    <p>
+      Proyecto ficticio creado como demostración de desarrollo web.
+    </p>
+
+    <p>
+      © 2026 Dentalia Demo
+    </p>
+
+  </div>
+
+</footer>
+
+
+<div id="successModal" class="modal">
+
+  <div class="modal-card">
+
+    <button
+      id="closeModal"
+      class="modal-close"
+      type="button"
+    >
+      ×
+    </button>
+
+    <div class="success-icon">
+      ✓
+    </div>
+
+    <p class="section-label">
+      DEMOSTRACIÓN COMPLETADA
+    </p>
+
+    <h2>
+      Solicitud preparada
+    </h2>
+
+    <p>
+      En una web real, el siguiente paso podría ser enviar
+      la solicitud de forma segura a la clínica.
+    </p>
+
+    <button
+      id="finishButton"
+      class="btn-primary modal-button"
+      type="button"
+    >
+      Entendido
+    </button>
+
+  </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
