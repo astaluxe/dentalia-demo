@@ -1,1 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #17313b;
+  background: #f7faf9;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(1120px, 90%);
+  margin: auto;
+}
+
+.section {
+  padding: 95px 0;
+}
+
+a {
+  color: inherit;
+}
+
+
+/* HEADER */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(250, 253, 252, 0.94);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid #e1e9e6;
+}
+
+.nav {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #18a88b;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: .92rem;
+}
+
+.nav-button {
+  background: #163b45;
+  color: white;
+  padding: 10px 17px;
+  border-radius: 8px;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(circle at 80% 20%, #d9f5ed 0, transparent 32%),
+    linear-gradient(135deg, #f9fcfb, #edf8f5);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 75px;
+  align-items: center;
+}
+
+.eyebrow,
+.section-label,
+.small-label {
+  color: #15957c;
+  font-size: .75rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(3.3rem, 7vw, 6rem);
+  line-height: .98;
+  letter-spacing: -3px;
+  max-width: 800px;
+}
+
+.hero h1 span {
+  color: #18a88b;
+}
+
+.hero-description {
+  margin-top: 28px;
+  max-width: 620px;
+  font-size: 1.1rem;
+  color: #61757c;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.btn-primary,
+.btn-secondary,
+.card-button {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 14px 21px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background: #173f49;
+  color: white;
+}
+
+.btn-secondary {
+  border: 1px solid #aabbb7;
+  color: #17313b;
+}
+
+.trust-row {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  color: #62757a;
+  font-size: .85rem;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+  background: white;
+  padding: 38px;
+  border-radius: 18px;
+  box-shadow: 0 25px 70px rgba(37, 92, 81, .12);
+  border: 1px solid #e2ece9;
+}
+
+.hero-card h2 {
+  font-size: 2rem;
+  line-height: 1.12;
+  margin-bottom: 15px;
+}
+
+.hero-card p {
+  color: #66777b;
+  margin-bottom: 25px;
+}
+
+.card-button {
+  background: #18a88b;
+  color: white;
+}
+
+
+/* GENERAL */
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.section-heading h2,
+.confidence h2,
+.appointment h2,
+.faq-title {
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  line-height: 1.05;
+  letter-spacing: -2px;
+}
+
+.section-heading p {
+  max-width: 430px;
+  color: #718186;
+}
+
+
+/* TREATMENTS */
+
+.treatments {
+  background: white;
+}
+
+.treatment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.treatment-card {
+  border: 1px solid #dfe9e6;
+  border-radius: 13px;
+  padding: 28px;
+  background: #fbfdfc;
+}
+
+.treatment-card > span {
+  color: #18a88b;
+  font-weight: 900;
+}
+
+.treatment-card h3 {
+  margin: 25px 0 12px;
+  font-size: 1.25rem;
+}
+
+.treatment-card p {
+  color: #718186;
+  min-height: 115px;
+}
+
+.choose-treatment {
+  margin-top: 20px;
+  border: 0;
+  background: transparent;
+  color: #168e77;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+/* CONFIDENCE */
+
+.confidence {
+  background: #153b45;
+  color: white;
+}
+
+.confidence-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+}
+
+.confidence-text {
+  color: #aac0c4;
+  max-width: 550px;
+  margin-top: 25px;
+}
+
+.confidence-points {
+  display: flex;
+  flex-direction: column;
+}
+
+.confidence-points > div {
+  padding: 25px 0;
+  border-top: 1px solid rgba(255,255,255,.17);
+}
+
+.confidence-points strong {
+  color: #55d1b7;
+}
+
+.confidence-points h3 {
+  margin: 8px 0;
+}
+
+.confidence-points p {
+  color: #aac0c4;
+}
+
+
+/* APPOINTMENT */
+
+.appointment {
+  background: #eaf6f2;
+}
+
+.appointment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 85px;
+}
+
+.appointment-grid > div > p:last-child {
+  margin
